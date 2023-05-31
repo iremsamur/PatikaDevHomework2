@@ -1,10 +1,19 @@
-package com.akbankbootcamp.invoiceapp.dto;
+package com.akbankbootcamp.invoiceapp.dto.Customer;
 
-public class CustomerSaveRequestDTO {
+public class CustomerDTO {
+    private Long id;
     private String name;
     private String surname;
     private String email;
     private String phoneNumber;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;

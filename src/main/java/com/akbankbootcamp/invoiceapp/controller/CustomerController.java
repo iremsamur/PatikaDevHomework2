@@ -1,8 +1,8 @@
 package com.akbankbootcamp.invoiceapp.controller;
 
 import com.akbankbootcamp.invoiceapp.controller.contract.CustomerControllerContract;
-import com.akbankbootcamp.invoiceapp.dto.CustomerDTO;
-import com.akbankbootcamp.invoiceapp.dto.CustomerSaveRequestDTO;
+import com.akbankbootcamp.invoiceapp.dto.Customer.CustomerDTO;
+import com.akbankbootcamp.invoiceapp.dto.Customer.CustomerSaveRequestDTO;
 import com.akbankbootcamp.invoiceapp.general.RestResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -48,6 +48,15 @@ public class CustomerController {
             return ResponseEntity.ok(RestResponse.emptyError(ex.getMessage()));
         }
 
+    }
+    @GetMapping
+    public ResponseEntity<RestResponse<List<CustomerDTO>>> findAllCustomersByNameStartswithC(){
+        try {
+            List<CustomerDTO> customerDTOS = customerControllerContract.findAllCustomersByNameStartswithC();
+            return ResponseEntity.ok(RestResponse.success(customerDTOS,"Adı C harfi ile başlayan müşteriler başarıyla listelendi"));
+        } catch (Exception ex) {
+            return ResponseEntity.ok(RestResponse.emptyError(ex.getMessage()));
+        }
     }
 
 }

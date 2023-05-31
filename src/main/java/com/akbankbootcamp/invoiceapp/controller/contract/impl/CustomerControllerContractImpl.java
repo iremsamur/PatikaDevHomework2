@@ -2,8 +2,8 @@ package com.akbankbootcamp.invoiceapp.controller.contract.impl;
 
 import com.akbankbootcamp.invoiceapp.controller.contract.CustomerControllerContract;
 import com.akbankbootcamp.invoiceapp.dao.CustomerRepository;
-import com.akbankbootcamp.invoiceapp.dto.CustomerDTO;
-import com.akbankbootcamp.invoiceapp.dto.CustomerSaveRequestDTO;
+import com.akbankbootcamp.invoiceapp.dto.Customer.CustomerDTO;
+import com.akbankbootcamp.invoiceapp.dto.Customer.CustomerSaveRequestDTO;
 import com.akbankbootcamp.invoiceapp.entity.Customer;
 import com.akbankbootcamp.invoiceapp.mapper.CustomerMapper;
 import com.akbankbootcamp.invoiceapp.service.entityService.CustomerEntityService;
@@ -39,5 +39,12 @@ public class CustomerControllerContractImpl implements CustomerControllerContrac
 
         Customer customer = CustomerMapper.INSTANCE.convertToCustomer(customerDTO);
         customerEntityService.remove(customer);
+    }
+
+    @Override
+    public List<CustomerDTO> findAllCustomersByNameStartswithC() {
+        List<CustomerDTO> customerList = CustomerMapper.INSTANCE.convertToCustomerList(customerEntityService.findAllCustomersByNameStartswithC());
+
+        return customerList;
     }
 }
