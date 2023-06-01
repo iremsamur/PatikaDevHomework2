@@ -1,23 +1,42 @@
 # PatikaDevHomework2
 Bir müşterinin, sipariş oluşturup, faturalarını kaydedebildiği ve görüntüleyebildiği bir uygulama
+<br>
 Gereksinimler
+<br>
 • Final, static, overload, override, constructor, kalıtım, polimorfizim, encapsulation, List, Set, Map kavramlarını kullanılmalıdır.
+<br>
 • Sisteme eklemeler yapabilirsiniz.
+<br>
 • Main method üzerinde çalışması yeterlidir.
+<br>
 • SOLID prensiplerine uygun olarak yazmaya çalışınız.
+<br>
 Ödev Adımları
+<br>
 • Listeleme işlemleri stream kullanılarak yapılmalı.
+<br>
 • Maven projesi oluşturun.
+<br>
 • Maven komutlarını çalıştırıp, çıktıyı ekleyin
+<br>
 Tüm müşterileri listeleyin
+<br>
 • Yeni Müşteri oluşturabilen
+<br>
 • İçerisinde 'C' harfi olan müşterileri listeleyin
+<br>
 • Haziran ayında kayıt olan müşterilerin faturalarınının toplam tutarını listeleyin
+<br>
 • Sistemdeki tüm faturaları listeleyin
+<br>
 • Sistemdeki 1500TL üstündeki faturaları listeleyin
+<br>
 Sistemdeki 1500TL üstündeki faturaları ortalamasını hesaplayın
+<br>
 Sistemdeki 500TL altındaki faturalara sahip müşterilerin isimleri listeleyin
+<br>
 Haziran ayını faturalarını ortalaması 750 altı olan firmalarının hangi sektörde olduğunu listeleyen kodu yazın.
+<br>
 ![image](https://github.com/iremsamur/PatikaDevHomework2/assets/76771500/b37364ed-fa6b-4bae-8656-834f899aa771)
 
 ![image](https://github.com/iremsamur/PatikaDevHomework2/assets/76771500/9f0405e2-3a7e-485a-a3c7-65205b0043f4)
