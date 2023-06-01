@@ -3,7 +3,7 @@ package com.akbankbootcamp.invoiceapp.dto.Customer;
 public class CustomerDTO {
     private Long id;
     private String name;
-    private String surname;
+    private String sector;
     private String email;
     private String phoneNumber;
 
@@ -23,14 +23,6 @@ public class CustomerDTO {
         this.name = name;
     }
 
-    public String getSurname() {
-        return surname;
-    }
-
-    public void setSurname(String surname) {
-        this.surname = surname;
-    }
-
     public String getEmail() {
         return email;
     }
@@ -45,5 +37,13 @@ public class CustomerDTO {
 
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
+    }
+
+    public String getSector() {
+        return sector;
+    }
+
+    public void setSector(String sector) {
+        this.sector = sector;
     }
 }

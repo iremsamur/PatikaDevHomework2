@@ -49,7 +49,7 @@ public class CustomerController {
         }
 
     }
-    @GetMapping
+    @GetMapping("/findAllCustomersByNameStartswithC")
     public ResponseEntity<RestResponse<List<CustomerDTO>>> findAllCustomersByNameStartswithC(){
         try {
             List<CustomerDTO> customerDTOS = customerControllerContract.findAllCustomersByNameStartswithC();

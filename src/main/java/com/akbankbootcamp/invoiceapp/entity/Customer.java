@@ -5,15 +5,16 @@ import com.akbankbootcamp.invoiceapp.general.BaseEntity;
 public class Customer extends BaseEntity {
 
     private String name;
-    private String surname;
+    private String sectorTitle;
     private String email;
     private String phoneNumber;
 
-    public Customer(String name, String surname, String email, String phoneNumber) {
+    public Customer(String name, String email, String phoneNumber,String sectorTitle) {
+        super();
         this.name = name;
-        this.surname = surname;
         this.email = email;
         this.phoneNumber = phoneNumber;
+        this.sectorTitle = sectorTitle;
     }
 
     public String getEmail() {
@@ -40,12 +41,12 @@ public class Customer extends BaseEntity {
         this.name = name;
     }
 
-    public String getSurname() {
-        return surname;
+    public String getSectorTitle() {
+        return sectorTitle;
     }
 
-    public void setSurname(String surname) {
-        this.surname = surname;
+    public void setSectorTitle(String sectorTitle) {
+        this.sectorTitle = sectorTitle;
     }
 }
 
